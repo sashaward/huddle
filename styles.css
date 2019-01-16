@@ -3,6 +3,16 @@ html {
     font-weight: 400;
     font-size: 14px; 
     text-align: center; 
+    margin: auto;
+}
+
+body {
+    display: block;
+    margin: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
 }
 
 h1 {
@@ -21,36 +31,31 @@ h3 {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-size: 20px; 
+    margin-top: 15%;
+}
+
+h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 16px; 
+    margin: 0px;
 }
 
 p {
-    font-weight: 300;
+    font-weight: 400;
     font-size: 14px; 
-    color: #808080;
+    color: #838C8E;
     line-height: 1.5;
 }
 
 header {
-
-}
-
-section {
-    padding: 10%;
-}
-
-button {
-    background-color: #FE51C0;
-    -webkit-box-shadow: 0px 0px 33px 8px rgba(235,235,235,1);
-    -moz-box-shadow: 0px 0px 33px 8px rgba(235,235,235,1);
-    box-shadow: 0px 0px 33px 8px rgba(235,235,235,1); 
-    border-radius: 24px;
-    padding: 5% 15%;
-}
-
-.flex-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10px 0px;
+}
+
+.logo  {
+    height: 17px;
 }
 
 .cta {
@@ -59,6 +64,45 @@ button {
     -moz-box-shadow: 0px 0px 33px 8px rgba(235,235,235,1);
     box-shadow: 0px 0px 33px 8px rgba(235,235,235,1); 
     border-radius: 12px;
+    padding: 5px 25px;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+section {
+    padding: 10%;
+    background-image: url("./images/bg-hero-mobile.svg");
+    background-color: hsl(193, 100%, 96%);
+}
+
+section img {
+    width: 100%;
+    margin-top: 60px;
+}
+
+button {
+    background-color:hsl(322, 100%, 66%);
+    color: #fff;
+    font-weight: 700;
+    -webkit-box-shadow: 0px 0px 33px 8px rgba(235,235,235,1);
+    -moz-box-shadow: 0px 0px 33px 8px rgba(235,235,235,1);
+    box-shadow: 0px 0px 33px 8px rgba(235,235,235,1); 
+    border: none;
+    border-radius: 24px;
+    padding: 5% 15%;
+    margin-top: 20px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.card img {
+    width: 80%;
+    height: auto;
 }
 
 .card {
@@ -66,10 +110,16 @@ button {
     -webkit-box-shadow: 0px 0px 33px 8px rgba(235,235,235,1);
     -moz-box-shadow: 0px 0px 33px 8px rgba(235,235,235,1);
     box-shadow: 0px 0px 33px 8px rgba(235,235,235,1); 
-    border-radius: 12px;
-    padding: 5%;
-    margin-bottom: 24px;
-    width: 85%;
+    border-radius: 14px;
+    padding: 15% 5% 8% 5%;
+    margin-bottom: 36px;
+    width: 80%;
 }
 
-.attribution a { color: hsl(228, 45%, 44%); 
+.card:first-child {
+    margin-top: 60px;
+}
+
+.card:last-of-type {
+    padding: 0px;
+}
