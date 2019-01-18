@@ -63,17 +63,18 @@ header {
     justify-content: space-between;
     padding: 20px 15px 0px;
 }
-
+    
 .logo  {
     height: 17px;
 }
-
+    
 .logo-bw {
     height: 35px;
     display: flex;
     filter: brightness(0) invert(1);
     padding: 120px 0px 26px 16px;
 }
+
 
 .cta {
     background-color: #fff;
@@ -85,10 +86,14 @@ header {
     font-size: 10px;
     font-weight: 700;
 }
+    
+.hero-text {
+    margin: 0 auto;
+}
 
 section {
     margin-top: -50px;
-    padding: 25% 10% 10%;
+    padding: 150px 10% 10%;
     background-image: url("./images/bg-hero-mobile.svg");
     background-color: hsl(193, 100%, 96%);
 }
@@ -107,8 +112,9 @@ button {
     box-shadow: 0px 0px 33px 8px rgba(235,235,235,1); 
     border: none;
     border-radius: 24px;
-    padding: 5% 15%;
+    width: 190px;
     margin-top: 20px;
+    height: 44px;
 }
 
 .flex-container {
@@ -121,7 +127,10 @@ button {
 .card img {
     width: 80%;
     height: auto;
-}
+    max-width: 330.875px; 
+    max-height: 270.859px;
+    }
+
 
 .card {
     background-color: #fff;
@@ -129,10 +138,12 @@ button {
     -moz-box-shadow: 0px 0px 33px 8px rgba(235,235,235,1);
     box-shadow: 0px 0px 33px 8px rgba(235,235,235,1); 
     border-radius: 14px;
-    padding: 15% 5% 8% 5%;
+    padding: 50px 20px 25px 20px;
     margin-bottom: 36px;
     width: 80%;
 }
+
+
 
 .card:first-child {
     margin-top: 60px;
@@ -207,4 +218,52 @@ footer p a {
     font-size: 10px;
     justify-content: center;
     padding: 0px;
+}
+    
+@media screen and (min-width: 500px) {
+
+    .card {
+        max-height: 500px;
+        max-width: 400px;
+    }
+
+    .hero-image {
+        max-width: 592px;
+        max-height: 422.688px;
+    }
+
+}
+
+@media screen and (min-width: 850px) {
+
+    h3 {
+        margin-top: 0px;
+        text-align: left;
+    }
+
+    p {
+        text-align: left;
+        padding: 0 0;
+        max-width: 360px;
+    }
+
+    .hero-text {
+        max-width: 560px;
+    }
+
+    .card { 
+        max-height: none;
+        max-width: none;
+        padding: 0;
+    }
+
+    .card img {
+        float: right;
+        padding: 30px;
+    }
+
+    .card-text {
+        padding: 92px 90px;
+    }
+
 }
