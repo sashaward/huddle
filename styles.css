@@ -207,6 +207,12 @@ a {
     font-size: 10px;
 }
 
+.bottom {
+    background-color: hsl(192, 100%, 9%);
+
+}
+
+
 footer {
     padding-bottom: 20px;
 }
@@ -311,11 +317,11 @@ footer p a {
     }
 
     .links-left {
-        padding-left: 15%;
+        padding-left: 30px;
     }
 
     .links-right {
-        padding-left: 15%;
+        padding-left: 30px;
     }
 
     .social {
@@ -326,6 +332,10 @@ footer p a {
 
     .fab {
         margin-right: 30px;
+    }
+
+    footer {
+        width: 100%;
     }
 
     footer p a {
@@ -388,9 +398,43 @@ footer p a {
         max-width: 970px;
     }
 
+    h5 {
+        max-width: 362.812px;
+    }
+
     .links-left {
         float: left;
-        margin-right: 15%;
     }
+
+    .one {
+        width: 45%;
+    }
+
+    .link {
+        width: 35%;
+    }
+
+    .social {
+        padding: 40px 0;
+        float: right;
+        width: auto; 
+        margin-top: 140px; 
+    }
+
+    .copyright {
+        width: 282px;
+    }
+
+    .bottom {
+     display: flex; 
+     flex-direction: row-reverse;
+     background-color: hsl(192, 100%, 9%);
+     padding: 30px 10% 0px;
+    }
+
+    footer p {
+        width: 200px;
+    }
+    
 
 }
