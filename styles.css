@@ -160,6 +160,7 @@ button {
     background-color: hsl(192, 100%, 9%);
     color: #fff;
     margin-top: -95px;
+    padding: 0px 10% 0px; 
 }
 
 .item {
@@ -236,10 +237,33 @@ footer p a {
 
 @media screen and (min-width: 850px) {
 
+    header {
+        padding: 60px 10% 0px;
+    }
+
+    .logo {
+        height: 30px;
+    }
+
+    .cta {
+        padding: 10px 35px;
+        border-radius: 20px;
+        font-size: 12px;
+    }
+
+    section {
+        margin-top: -100px;
+    }
+
     h3 {
         margin-top: 0px;
         text-align: left;
     }
+
+    h4 {
+        font-size: 20px;
+    }
+
 
     p {
         text-align: left;
@@ -264,6 +288,109 @@ footer p a {
 
     .card-text {
         padding: 92px 90px;
+    }
+
+    .card:last-of-type {
+        padding: 40px;
+        max-width: 600px;
+
+    }
+
+    .contact {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .one {
+        width: 50%;
+    }
+
+    .link {
+        width: 50%;
+        margin-top: 140px;
+    }
+
+    .links-left {
+        padding-left: 15%;
+    }
+
+    .links-right {
+        padding-left: 15%;
+    }
+
+    .social {
+        width: 100%;
+        justify-content: flex-start;
+        padding: 0px;
+    }
+
+    .fab {
+        margin-right: 30px;
+    }
+
+    footer p a {
+        justify-content: left;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    h1 {
+        text-align: left;
+        font-size: 36px;
+        line-height: 48px;
+        margin-bottom: 10px;
+        max-width: 453.219px;
+    }
+
+    h2 {
+        text-align: left;
+        max-width: 453.219px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    h4 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+        max-width: 450px;
+    }
+
+    button {
+        font-size: 12px;
+    }
+
+    section {
+        display: flex;
+    }
+
+    section img {
+        margin-top: 0px;
+    }
+
+    .hero-text {
+        display: flex;
+        flex-direction: column;
+        margin: 0px 0px 0px 20px;
+    }
+
+    .hero-image {
+        padding-left: 60px;
+    }
+
+    .card {
+        max-width: 970px;
+    }
+
+    .links-left {
+        float: left;
+        margin-right: 15%;
     }
 
 }
