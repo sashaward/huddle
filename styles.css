@@ -63,17 +63,18 @@ header {
     justify-content: space-between;
     padding: 20px 15px 0px;
 }
-
+    
 .logo  {
     height: 17px;
 }
-
+    
 .logo-bw {
     height: 35px;
     display: flex;
     filter: brightness(0) invert(1);
     padding: 120px 0px 26px 16px;
 }
+
 
 .cta {
     background-color: #fff;
@@ -85,10 +86,14 @@ header {
     font-size: 10px;
     font-weight: 700;
 }
+    
+.hero-text {
+    margin: 0 auto;
+}
 
 section {
     margin-top: -50px;
-    padding: 25% 10% 10%;
+    padding: 150px 10% 10%;
     background-image: url("./images/bg-hero-mobile.svg");
     background-color: hsl(193, 100%, 96%);
 }
@@ -107,8 +112,9 @@ button {
     box-shadow: 0px 0px 33px 8px rgba(235,235,235,1); 
     border: none;
     border-radius: 24px;
-    padding: 5% 15%;
+    width: 190px;
     margin-top: 20px;
+    height: 44px;
 }
 
 .flex-container {
@@ -121,7 +127,10 @@ button {
 .card img {
     width: 80%;
     height: auto;
-}
+    max-width: 330.875px; 
+    max-height: 270.859px;
+    }
+
 
 .card {
     background-color: #fff;
@@ -129,10 +138,12 @@ button {
     -moz-box-shadow: 0px 0px 33px 8px rgba(235,235,235,1);
     box-shadow: 0px 0px 33px 8px rgba(235,235,235,1); 
     border-radius: 14px;
-    padding: 15% 5% 8% 5%;
+    padding: 50px 20px 25px 20px;
     margin-bottom: 36px;
     width: 80%;
 }
+
+
 
 .card:first-child {
     margin-top: 60px;
@@ -149,6 +160,7 @@ button {
     background-color: hsl(192, 100%, 9%);
     color: #fff;
     margin-top: -95px;
+    padding: 0px 10% 0px; 
 }
 
 .item {
@@ -195,6 +207,12 @@ a {
     font-size: 10px;
 }
 
+.bottom {
+    background-color: hsl(192, 100%, 9%);
+
+}
+
+
 footer {
     padding-bottom: 20px;
 }
@@ -207,4 +225,216 @@ footer p a {
     font-size: 10px;
     justify-content: center;
     padding: 0px;
+}
+    
+@media screen and (min-width: 500px) {
+
+    .card {
+        max-height: 500px;
+        max-width: 400px;
+    }
+
+    .hero-image {
+        max-width: 592px;
+        max-height: 422.688px;
+    }
+
+}
+
+@media screen and (min-width: 850px) {
+
+    header {
+        padding: 60px 10% 0px;
+    }
+
+    .logo {
+        height: 30px;
+    }
+
+    .cta {
+        padding: 10px 35px;
+        border-radius: 20px;
+        font-size: 12px;
+    }
+
+    section {
+        margin-top: -100px;
+    }
+
+    h3 {
+        margin-top: 0px;
+        text-align: left;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+
+    p {
+        text-align: left;
+        padding: 0 0;
+        max-width: 360px;
+    }
+
+    .hero-text {
+        max-width: 560px;
+    }
+
+    .card { 
+        max-height: none;
+        max-width: none;
+        padding: 0;
+    }
+
+    .card img {
+        float: right;
+        padding: 30px;
+    }
+
+    .card-text {
+        padding: 92px 90px;
+    }
+
+    .card:last-of-type {
+        padding: 40px;
+        max-width: 600px;
+
+    }
+
+    .contact {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .one {
+        width: 50%;
+    }
+
+    .link {
+        width: 50%;
+        margin-top: 140px;
+    }
+
+    .links-left {
+        padding-left: 30px;
+    }
+
+    .links-right {
+        padding-left: 30px;
+    }
+
+    .social {
+        width: 100%;
+        justify-content: flex-start;
+        padding: 0px;
+    }
+
+    .fab {
+        margin-right: 30px;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    footer p a {
+        justify-content: left;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    h1 {
+        text-align: left;
+        font-size: 36px;
+        line-height: 48px;
+        margin-bottom: 10px;
+        max-width: 453.219px;
+    }
+
+    h2 {
+        text-align: left;
+        max-width: 453.219px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    h4 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+        max-width: 450px;
+    }
+
+    button {
+        font-size: 12px;
+    }
+
+    section {
+        display: flex;
+    }
+
+    section img {
+        margin-top: 0px;
+    }
+
+    .hero-text {
+        display: flex;
+        flex-direction: column;
+        margin: 0px 0px 0px 20px;
+    }
+
+    .hero-image {
+        padding-left: 60px;
+    }
+
+    .card {
+        max-width: 970px;
+    }
+
+    h5 {
+        max-width: 362.812px;
+    }
+
+    .links-left {
+        float: left;
+    }
+
+    .one {
+        width: 45%;
+    }
+
+    .link {
+        width: 35%;
+    }
+
+    .social {
+        padding: 40px 0;
+        float: right;
+        width: auto; 
+        margin-top: 140px; 
+    }
+
+    .copyright {
+        width: 282px;
+    }
+
+    .bottom {
+     display: flex; 
+     flex-direction: row-reverse;
+     background-color: hsl(192, 100%, 9%);
+     padding: 30px 10% 0px;
+    }
+
+    footer p {
+        width: 200px;
+    }
+    
+
 }
